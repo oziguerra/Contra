@@ -4,23 +4,23 @@ import java.util.ArrayList;
 
 public class Tournament
 {
-    private ArrayList<Player> players;
+    private ArrayList<TournamentBracket> brackets;
     private String tournamentName;
 
     public Tournament(String tn)
     {
         tournamentName = tn;
-        players = new ArrayList<Player>();
+        brackets = new ArrayList<TournamentBracket>();
     }
 
-    public void addPlayer(Player newPlayer)
+    public void addBracket(TournamentBracket newBracket)
     {
-        players.add(newPlayer);
+        brackets.add(newBracket);
     }
 
-    public void removePlayer(Player playerToRemove)
+    public void removeBracket(TournamentBracket bracketToRemove)
     {
-        players.remove(playerToRemove);
+        brackets.remove(bracketToRemove);
     }
 
 }
