@@ -4,6 +4,7 @@ public class Player implements Comparable<Player>
 {
     private String name;
     private int score;
+
     public Player(String n)
     {
         name = n;
@@ -24,5 +25,10 @@ public class Player implements Comparable<Player>
     public int getScore()
     {
         return score;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 }

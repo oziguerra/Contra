@@ -23,9 +23,28 @@ public class TournamentBracket
         players.add(player2);
     }
 
-    public void selectWinner()
+    public void addPlayer(Player newPlayer)
     {
+        players.add(newPlayer);
+    }
 
+    public Player selectWinner()
+    {
+        if(players.size() == 1)
+        {
+            winner = players.get(0);
+            return winner;
+        }
+        else
+        {
+            if(players.get(0).compareTo(players.get(1)) > 0)
+            {
+                winner = players.get(0);
+                return winner;
+            }
+            winner = players.get(1);
+            return winner;
+        }
     }
 }
 
