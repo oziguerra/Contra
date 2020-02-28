@@ -18,4 +18,9 @@ public class Tournament
         players.add(newPlayer);
     }
 
+    public void removePlayer(Player playerToRemove)
+    {
+        players.remove(playerToRemove);
+    }
+
 }
