@@ -3,12 +3,14 @@ package com.example.contra;
 public class Player implements Comparable<Player>
 {
     private String name;
+    private String gamerTag;
     private int score;
 
-    public Player(String n)
+    public Player(String n, String gt)
     {
         name = n;
         score = 0;
+        gamerTag = gt;
     }
 
     /**
@@ -31,4 +33,6 @@ public class Player implements Comparable<Player>
     {
         return name;
     }
+
+    public String getGamerTag() { return gamerTag; }
 }
