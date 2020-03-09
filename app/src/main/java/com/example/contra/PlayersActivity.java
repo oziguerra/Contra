@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Players extends AppCompatActivity {
+public class PlayersActivity extends AppCompatActivity {
     public static final String KEY = "key2";
     public static final int VALUE = 2;
     Button buttonAdd, buttonView;
@@ -20,9 +20,9 @@ public class Players extends AppCompatActivity {
     }
     public void onClickAdd(View view){
 
-            Intent myIntent = new Intent(Players.this, AddPlayer.class);
+            Intent myIntent = new Intent(PlayersActivity.this, AddPlayerActivity.class);
             myIntent.putExtra(KEY, VALUE);
-            Players.this.startActivity(myIntent);
+            PlayersActivity.this.startActivity(myIntent);
 
     }
 }

@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
         buttonT=findViewById(R.id.button_T);
     }
     public void onClickP(View view){
-        Intent myIntent = new Intent(MainActivity.this, Players.class);
+        Intent myIntent = new Intent(MainActivity.this, PlayersActivity.class);
         myIntent.putExtra(KEY, VALUE);
         MainActivity.this.startActivity(myIntent);
     }
     public void onClickT(View view){
-        Intent myIntent = new Intent(MainActivity.this, Tournaments.class);
+        Intent myIntent = new Intent(MainActivity.this, TournamentsActivity.class);
         myIntent.putExtra(KEY, VALUE);
         MainActivity.this.startActivity(myIntent);
     }
