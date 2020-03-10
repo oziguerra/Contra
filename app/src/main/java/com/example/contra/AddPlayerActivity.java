@@ -2,11 +2,12 @@ package com.example.contra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-
-import static com.example.contra.MainActivity.playerList;
+import static com.example.contra.PlayerList.playerList;
 
 public class AddPlayerActivity extends AppCompatActivity {
 
@@ -25,5 +26,7 @@ public class AddPlayerActivity extends AppCompatActivity {
     public void addPlayer(View view)
     {
         playerList.add(new Player(nameEditText.getText().toString(), ignEditText.getText().toString()));
+        Log.i("Player list: ", playerList.get(playerList.size() - 1).getName() + " " + playerList.get(playerList.size() - 1).getGamerTag());
+        this.finish();
     }
 }
