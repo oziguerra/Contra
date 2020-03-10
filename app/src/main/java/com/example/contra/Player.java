@@ -35,4 +35,17 @@ public class Player implements Comparable<Player>
     }
 
     public String getGamerTag() { return gamerTag; }
+
+    public void addToScore()
+    {
+        score++;
+    }
+
+    public void subtractFromScore()
+    {
+        if(score > 0)
+        {
+            score--;
+        }
+    }
 }
