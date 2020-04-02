@@ -1,5 +1,7 @@
 package com.example.contra;
 
+import androidx.annotation.NonNull;
+
 public class Player implements Comparable<Player>
 {
     private String name;
@@ -47,5 +49,12 @@ public class Player implements Comparable<Player>
         {
             score--;
         }
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        String stringToReturn = "Name: " + name + ", In game name: " + gamerTag;
+        return stringToReturn;
     }
 }
