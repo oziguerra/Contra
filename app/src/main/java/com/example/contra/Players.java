@@ -16,7 +16,7 @@ public class Players extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_players);
         buttonAdd = findViewById(R.id.button_Add);
-        buttonView = findViewById(R.id.button_View);
+
     }
     public void onClickAdd(View view){
 
