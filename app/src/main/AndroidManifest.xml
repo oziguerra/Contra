@@ -8,10 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/clogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".TournamentsActivity"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MatchView"></activity>
+        <activity android:name=".TournamentsActivity" />
         <activity android:name=".AddPlayerActivity" />
         <activity android:name=".Select_Player" />
+        <activity android:name=".fourP_Tournamet" />
         <activity android:name=".T_Creator" />
         <activity android:name=".PlayersActivity" />
         <activity android:name=".MainActivity">
