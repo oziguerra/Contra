@@ -17,8 +17,8 @@ public class TournamentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tournaments);
     }
     public void onClickCreate(View view){
-        Intent myIntent = new Intent(Tournaments.this, T_Creator.class);
+        Intent myIntent = new Intent(TournamentsActivity.this, T_Creator.class);
         myIntent.putExtra(KEY, VALUE);
-        Tournaments.this.startActivity(myIntent);
+        TournamentsActivity.this.startActivity(myIntent);
     }
 }

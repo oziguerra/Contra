@@ -4,13 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/clogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/clogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".TournamentsActivity"></activity>
         <activity android:name=".AddPlayerActivity" />
+        <activity android:name=".Select_Player" />
+        <activity android:name=".T_Creator" />
         <activity android:name=".PlayersActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

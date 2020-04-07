@@ -17,7 +17,7 @@ public class T_Creator extends AppCompatActivity {
         setContentView(R.layout.activity_t__creator);
     }
     public void onClickFinish(View view){
-        Intent myIntent = new Intent(T_Creator.this, Tournaments.class);
+        Intent myIntent = new Intent(T_Creator.this, TournamentsActivity.class);
         myIntent.putExtra(KEY, VALUE);
         T_Creator.this.startActivity(myIntent);
     }
