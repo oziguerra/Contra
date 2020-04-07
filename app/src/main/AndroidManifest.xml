@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Select_Player"></activity>
-        <activity android:name=".T_Creator" />
-        <activity android:name=".Tournaments" />
-        <activity android:name=".AddPlayer" />
-        <activity android:name=".Players" />
+        <activity android:name=".TournamentsActivity"></activity>
+        <activity android:name=".AddPlayerActivity" />
+        <activity android:name=".PlayersActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

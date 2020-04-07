@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Tournaments extends AppCompatActivity {
+public class TournamentsActivity extends AppCompatActivity {
 
     public static final String KEY = "key 4";
     public static final int VALUE = 4;
